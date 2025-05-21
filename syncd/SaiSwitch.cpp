@@ -1056,7 +1056,8 @@ void SaiSwitch::collectPortRelatedObjects(
     sai_attr_id_t attrs[] = {
         SAI_PORT_ATTR_QOS_QUEUE_LIST,
         SAI_PORT_ATTR_QOS_SCHEDULER_GROUP_LIST,
-        SAI_PORT_ATTR_INGRESS_PRIORITY_GROUP_LIST
+        SAI_PORT_ATTR_INGRESS_PRIORITY_GROUP_LIST,
+        SAI_PORT_ATTR_PORT_STAT_EXTENDED
     };
 
     for (size_t i = 0; i < sizeof(attrs)/sizeof(sai_attr_id_t); i++)
