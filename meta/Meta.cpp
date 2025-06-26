@@ -5447,6 +5447,7 @@ void Meta::meta_post_port_get(
             case SAI_PORT_ATTR_QOS_QUEUE_LIST:
             case SAI_PORT_ATTR_QOS_SCHEDULER_GROUP_LIST:
             case SAI_PORT_ATTR_INGRESS_PRIORITY_GROUP_LIST:
+            case SAI_PORT_ATTR_PORT_STAT_EXTENDED:
                 meta_add_port_to_related_map(port_id, attr.value.objlist);
                 break;
 
